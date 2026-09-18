@@ -1,0 +1,331 @@
+/* =================================
+   DOG PAW - BASE CSS RESET
+   ================================= */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base website styling */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f5f7f7;
+    color: #333333;
+}
+
+/* =================================
+   TYPOGRAPHY
+   ================================= */
+
+/* Main website heading */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Paragraph text */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* =================================
+   HEADER AND NAVIGATION
+   ================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #6f9b9b;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =================================
+   MAIN CONTENT
+   ================================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+}
+
+section {
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* =================================
+   FOOTER
+   ================================= */
+
+footer {
+    background-color: #6f9b9b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* =================================
+   BUTTONS
+   ================================= */
+
+button {
+    background-color: #6f9b9b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #547777;
+}
+
+/* Focus effect */
+button:focus {
+    outline: 2px solid #333;
+}
+
+/* =================================
+   FORMS
+   ================================= */
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+/* =================================
+   RESPONSIVE DESIGN
+   ================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    nav a {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 80%;
+        text-align: center;
+    }
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .service-cards article {
+        width: 100%;
+    }
+}
+
+/* =================================
+   RESPONSIVE IMAGES
+   ================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* =================================
+   GENERAL SPACING
+   ================================= */
+
+section {
+    margin-bottom: 2rem;
+}
+/* =================================
+   LINK HOVER EFFECT
+   ================================= */
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+/* =================================
+   HOME PAGE HERO
+   ================================= */
+
+.hero {
+    background-color: #dceaea;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    color: #547777;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+/* =================================
+   HOME PAGE BUTTONS
+   ================================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6f9b9b;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #547777;
+    opacity: 1;
+}
+
+/* =================================
+   WHAT WE DO SECTION
+   ================================= */
+
+.what-we-do {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    color: #547777;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.service-cards article {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-cards h3 {
+    color: #6f9b9b;
+    margin-bottom: 1rem;
+}

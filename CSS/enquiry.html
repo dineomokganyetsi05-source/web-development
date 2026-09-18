@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8".
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Get Help | DOG PAW</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
     <body>
 
         <header>
             <h1>Get Help</h1>
+
+            <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Get Help</a></li>
+        <li><a href="involved.html">Get Involved</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
         </header>
 
         <main>
@@ -21,3 +36,26 @@
             </p>
 
             <form>
+                <label for="name">Full Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone">
+
+<label for="help">What help do you need?</label>
+<textarea id="help" name="help" rows="5" required></textarea>
+
+<button type="submit">Submit Request</button>
+           </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 DOG PAW NPO</p>
+        </footer>
+
+    </body>
+</html>
